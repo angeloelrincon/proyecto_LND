@@ -28,7 +28,7 @@
  }
 
  .main-item:hover {
-     box-shadow: 0 4px 100px rgba(0, 0, 0, 0.7);
+     box-shadow: 0 4px 100px rgba(0, 0, 0, 0.3);
  }
 
  #primera-imagen {

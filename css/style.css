@@ -1,78 +1,104 @@
- body {
-     background-color: wheat;
-     margin: 0px;
-     padding: 0px;
- }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
- header {
-     margin: 10px;
-     background-color: white;
-     padding: 10px;
-     border-radius: 10px;
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
- }
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #dedede;
+    margin: 0px;
+    padding: 0px;
+}
 
- .main-container {
-     display: flex;
-     flex-flow: row wrap;
-     justify-content: space-evenly;
- }
+header {
+    background-color: wheat;
+    height: 10vh;
+}
 
- .main-item {
-     margin: 10px;
-     background-color: white;
-     width: 45%;
-     height: 20em;
-     border-radius: 10px;
-     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
- }
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
- .main-item:hover {
-     box-shadow: 0 4px 100px rgba(0, 0, 0, 0.3);
- }
+.header-item {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
- #primera-imagen {
-     background-image: url(../img/loro.jpg);
-     background-size: contain;
-     background-position: center;
-     background-repeat: no-repeat;
- }
+.main-container {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
 
- footer {
-     margin: 0px;
-     background-color: grey;
-     color: lightgray;
- }
+.main-item {
+    margin: 10px;
+    background-color: white;
+    width: 90vw;
+    height: 70vh;
+}
 
- /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {}
+.main-item:hover {
+    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.3);
+}
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {}
+#parrot-img {
+    background-image: url(../img/parrot.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {
-     .main-item {
-         margin: 10px;
-         background-color: white;
-         width: 30%;
-         height: 30em;
-         border-radius: 10px;
-         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-     }
- }
+#lion-img {
+    background-image: url(../img/lion.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {}
+#turtle-img {
+    background-image: url(../img/turtle.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
-     .main-item {
-         margin: 10px;
-         background-color: white;
-         width: 30%;
-         height: 35em;
-         border-radius: 10px;
-         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-     }
- }
+.parrot-container {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#parrot-inner-container {
+    padding: 5vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+}
+
+.parrot-inner-item {
+    padding: 5vw;
+}
+
+footer {
+    margin: 0px;
+    background-color: wheat;
+}
+
+@media only screen and (min-width: 768px) {
+    .main-item {
+        width: 45vw;
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-item {
+        width: 30vw;
+        height: 70vh;
+    }
+}
